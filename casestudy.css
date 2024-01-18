@@ -1,0 +1,58 @@
+.casestudy{
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+    
+}
+
+.casestudy .left{
+    width: 40%;
+    padding: 30px 80px;
+    
+}
+.casestudy .left h2{
+    font-size: 30px;
+    color: black;
+    line-height: 120%;
+}
+.casestudy .right{
+
+    width: 60%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.casestudy .left p,h2,a{
+    margin-bottom: 30px;
+}
+.casestudy .left a{
+    text-decoration: none;
+    color: orange;
+}
+.casestudy .right .card2{
+    height: auto;
+    width: 50%;
+    box-shadow: 5px 5px 10px rgb(94, 92, 92);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.casestudy .right .card2 img{
+    height: 60%;
+    width: 100%;
+
+}
+.card2 h4,p,img{
+    margin-bottom: 20px;
+    
+}
+.card2:nth-child(2){
+    margin-left: 30px;
+}
+.card2 h4{
+    font-size: larger;
+    color: black;
+}
