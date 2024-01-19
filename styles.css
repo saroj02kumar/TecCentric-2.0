@@ -613,6 +613,11 @@ img {
     font-size: xx-large;
 
 }
+
+.promo .left{
+  transition: 0.5s;
+  animation: promoRight 1s linear ;
+}
 .promo .left, .right{
     width: 50%;
     padding: 5px 0px;
@@ -623,6 +628,8 @@ img {
     text-align: center;
     display: flex;
     justify-content: center;
+   transition: 0.5s;
+    animation: promoTop 1s linear ;
     
 }
 .promo .right button{
@@ -655,6 +662,32 @@ img {
 .promo .left p,h2,h5{
   margin-bottom: 10px;
 }
+
+
+
+
+
+@keyframes promoTop {
+  0%{
+    transform: translate(0px,-100px);
+  }
+  100%{
+    transform: translate(0px,0px);
+  }
+  
+}
+
+
+@keyframes promoRight {
+  0%{
+    transform: translate(-200px,0px);
+  }
+  100%{
+    transform: translate(0px,0px);
+  }
+  
+}
+
 
 
 

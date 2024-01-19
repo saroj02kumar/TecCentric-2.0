@@ -8,14 +8,14 @@
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
   section {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: grid;
     place-items: center;
     /* overflow-y: auto; */
     background-color:white;
 
-    
+    padding: 50px;
    
     
   }
@@ -33,11 +33,14 @@
     font-size: 25px;
     color: rgb(23,40,82);
     font-family: sans-serif;
+
   }
+
+
   .service h2::before{
   content: '';
 	position: absolute;
-	left:0;
+	
 	bottom: -10px;
 	background-color:orange;
 	height: 4px;
@@ -48,7 +51,19 @@
     font-size: 40px;
     color: rgb(23,40,82);
     margin: 30px 0;
+    transition: 2s;
+    animation: servicesSubheading 2s linear ;
+    
+  }
 
+  @keyframes servicesSubheading {
+    0%{
+      transform: translate(-200px,0px);
+    }
+    100%{
+      transform: translate(0px,0px);
+    }
+    
   }
 
   .section-heading{
@@ -76,6 +91,21 @@
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     transition: 0.5s;
+    animation: services 2s linear ;
+
+
+  }
+
+
+
+  @keyframes services {
+    0%{
+      transform: translate(200px,0px);
+    }
+    100%{
+      transform: translate(0px,0px);
+    }
+    
   }
   h3 {
     font-size: 20px;

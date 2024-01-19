@@ -10,6 +10,8 @@
 .casestudy .left{
     width: 40%;
     padding: 30px 80px;
+    transition: 0.5s;
+    animation: CaseStudyLeft 1s linear;
     
 }
 .casestudy .left h2{
@@ -21,8 +23,8 @@
 
     width: 60%;
     padding: 30px 80px;
-    display: flex;
-    justify-content: space-between;
+   
+  
 
 }
 .casestudy .left p,h2,a{
@@ -39,6 +41,8 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    transition: 0.5s;
+    animation: CaseStudyRight 1s linear;
 }
 .casestudy .right .card2 img{
     height: 60%;
@@ -91,9 +95,28 @@ padding: 30px 5px;
 }
 
 
-
-
-
-
-
  }
+
+ 
+@keyframes CaseStudyLeft {
+    0%{
+      transform: translate(200px,0px);
+    }
+    100%{
+      transform: translate(0px,0px);
+    }
+    
+  }
+  
+  
+  @keyframes CaseStudyRight {
+    0%{
+      transform: translate(0px,200px);
+    }
+    100%{
+      transform: translate(0px,0px);
+    }
+    
+  }
+  
+  
