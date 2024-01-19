@@ -656,3 +656,20 @@ img {
   margin-bottom: 10px;
 }
 
+
+
+@media screen and (max-width:760px){
+
+.promo {
+  height: auto;
+  flex-wrap: wrap;
+}
+.promo .left,.right{
+
+  width: 100%;
+}
+
+
+
+
+}

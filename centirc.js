@@ -63,3 +63,52 @@ var slides = document.querySelectorAll('.slide');
       repeater();
     }
     repeat();
+
+
+
+    let cards = document.querySelectorAll(".service .card")
+    cards.forEach((e)=>{
+      console.log(e);
+        e.style.transform = "scale(0.5)"
+      
+})
+    
+     let serviceSubheading = document.querySelector(".service h4")
+      let serviceHeading = document.querySelector(".section-heading")
+
+
+      let  promoLeftDiv = document.querySelector(".promo .left")
+      let  promoRightDiv = document.querySelector(".promo .right")
+
+      let  promo = document.querySelector(".promo")
+     console.log(cards);
+    window.addEventListener("scroll",()=>{
+   console.log("yes scrolling");
+      serviceSubheading.style.transform = "translate(50px,0px)"
+      serviceSubheading.style.transition = "all 2s ease"
+         serviceHeading.style.transform = "rotate(360deg)"
+         serviceHeading.style.transition = "all 2s ease"
+       
+        
+
+         cards.forEach((e)=>{
+                console.log(e);
+                  e.style.transform = "scale(1)"
+                  e.style.transition = "all 4s ease"
+         })
+      
+    })
+    promoRightDiv.style.transform = "translate(0px,-40px)"
+    
+
+console.log(promo);
+promo.addEventListener("mouseover",()=>{
+  console.log("promo scrolling");
+  promoLeftDiv.style.transform = "translate(60px,0px)"
+  promoLeftDiv.style.transition = "all 1s ease"
+  promoRightDiv.style.transform = "translate(0px,0px)"
+  promoRightDiv.style.transition = "all 1s linear"
+  promoRightDiv.style.opacity = "1"
+ 
+})
+   

@@ -131,6 +131,8 @@
       flex: 0 50%;
       max-width: 50%;
     }
+
+
   }
   @media screen and (min-width: 992px) {
     .section {
@@ -150,4 +152,20 @@
       overflow-y: scroll;
       box-sizing: border-box;
     }
+
+  }
+
+  @media screen and (max-width: 760px) {
+    
+    .service h4 {
+      font-size: 25px;
+    }
+    .service .section-heading{
+      font-size: 20px;
+    }
+
+    .service h2::before{
+     
+      width: 100px;
+      }
   }
